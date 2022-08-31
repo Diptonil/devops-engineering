@@ -33,32 +33,9 @@ We can say that Cloud is a network of remote servers that are hosted on the inte
 - A location is divided into Regions and Zones.
 - A Region is a place where there are supposed to be server nodes.
 - A Zone is a subdivision of a Region that has Google datacenters and resources to be the nodes.
-- For example, a VM running within a Region may switch Zones if something goes wrong in the chosen zone. This is called *Zone Redundancy*.
-- Some services allow us to have *Region Redundancy* as well (like *Cloud Storage*). If a complete region, due to some natural disaster, goes down, we can switch over to the other region.
+- For example, a VM running within a Region may switch Zones if something goes wrong in the chosen zone. This is called **Zone Redundancy**.
+- Some services allow us to have **Region Redundancy** as well (like *Cloud Storage*). If a complete region, due to some natural disaster, goes down, we can switch over to the other region.
 - Approximately, 88 Zones and 29 Regions are supported.
-
-
-## Security Measures
-
-Google implements certain security techniques that are of paramount importance in the proper functioning of multiple services available to the users:
-1. The Hardware Infrastructure Layer:
-   - Hardware design is done by Google itself to ensure quality and assurance.
-   - Secure boot stack is implemented.
-   - Physical security to the datacenters is always given importance to.
-2. Service Deployment Layer:
-   - Inter-service communication encyrption is done to secure Google's communication process with itself for fetching and manipulating data.
-3. User Identity Layer:
-   - User Identity features go beyond just asking for passwords and emails.
-4. Storage Services Layer:
-   - Google ensures that hardware encryption support is enabled for data and file storage.
-5. Internet Communication Layer:
-   - Google Front End ensures all TLS connections are ended using a public-private key-pair.
-   - Denial of Services Attacks are prevented from occuring due to the multi-layered architecture supported by Google.
-6. Operational Security Layer:
-   - Intrusion detection.
-   - Reducing insider risk.
-   - Software development practices.
-   - U2F use.
 
 
 ## Quiz
@@ -69,28 +46,28 @@ Google implements certain security techniques that are of paramount importance i
 - [ ] Providers always dedicate physical resources to each customer.
 - [ ] All resources are open source.
 - [x] Resources are available from anywhere over the network.
-1. Which one of the following statements is true regarding the ability to scale cloud computing resources up and down?
+2. Which one of the following statements is true regarding the ability to scale cloud computing resources up and down?
 - [ ] Cloud computing does not provide a way to scale resources. 
 - [ ] Only CPU and memory resources are elastic.
 - [ ] Only storage resources are elastic.
 - [x] CPU, memory, and storage resources are elastic.
-1. What cloud computing service binds application code to libraries that give access to the infrastructure an application needs?
+3. What cloud computing service binds application code to libraries that give access to the infrastructure an application needs?
 - [x] Platform as a service
 - [ ] Infrastructure as a service
 - [ ] Virtualized data centers
 - [ ] Hybrid cloud
 - [ ] Software as a service
-1. What cloud computing service provides raw compute, storage, and network resources that are organized similarly to physical data centers?
+4. What cloud computing service provides raw compute, storage, and network resources that are organized similarly to physical data centers?
 - [x] Infrastructure as a service
 - [ ] Database as a service
 - [ ] Software as a service
 - [ ] Platform as a service
-1. Why might a Google Cloud customer use resources in several zones within a region?
+5. Why might a Google Cloud customer use resources in several zones within a region?
 - [x] For improved fault tolerance
 - [ ] For expanding services to customers in new areas
 - [ ] For better performance
 - [ ] For getting discounts on other zones
-1. Who benefits the most from billing by the second for cloud resources, such as virtual machines?
+6. Who benefits the most from billing by the second for cloud resources, such as virtual machines?
 - [ ] Customers who create too few virtual machines to get discounts
 - [x] Customers who create and run many virtual machines
 - [ ] Customers who create virtual machines that run commercially licensed operating systems

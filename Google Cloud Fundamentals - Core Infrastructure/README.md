@@ -8,3 +8,5 @@ This is the first course in the series offered by Google in Coursera to prepare 
 The sequence to progress with the material:
 1. Introducing Cloud Computing (text)
 1. Resources & Access (text)
+1. Virtual Machines (text)
+1. 
