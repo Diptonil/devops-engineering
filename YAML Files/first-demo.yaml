@@ -1,0 +1,30 @@
+# Key-value pairs
+"One": 1
+"Two": 2
+"Three": "Trois"
+4: "Four"
+5: "Cinq"
+6: 6
+---
+
+# Flow-Type Key-Value Pairs
+{"One": 1, "Two": 2, "Three": "Trois"}
+---
+
+# List
+- first
+- First
+- Second
+- Third
+---
+
+# Block
+colours:
+ - Black
+ - White
+ - Grey
+---
+
+# Flow-Type Block
+colours: [Black, White, Grey]
+...

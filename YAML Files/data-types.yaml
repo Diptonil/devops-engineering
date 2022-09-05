@@ -1,0 +1,29 @@
+# String Variables
+name: Selina Kyle
+hero: "Catwoman"
+profession: 'thief'
+
+# Floats
+grade: 6.9
+
+# Integers
+total: 420
+
+# Booleans
+truth: Yes
+falsity: No
+
+# Specify Data Types
+zero: !!int 0
+party: !!int 1000
+binary: !!int 011001
+octal: !!int 06574
+hex: !!int 0x45
+marks: !!float 7.2
+infinity: !!float .inf
+notANumber: !!float .nan
+permission: !!bool No
+name: !!str "Bruce... Banner"
+nothingness: !!null NULL
+date: !!timestamp 2002-12-14
+exponential: 6.0254E21

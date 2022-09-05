@@ -1,0 +1,8 @@
+{
+    "Cloud Providers": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Alibaba"
+    ]
+}
