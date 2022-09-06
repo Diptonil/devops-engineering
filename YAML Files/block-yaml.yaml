@@ -1,6 +1,6 @@
 Cloud Providers:
- - AWS
- - Azure
- - GCP
- - Alibaba
+  - AWS
+  - Azure
+  - GCP
+  - Alibaba
 ...

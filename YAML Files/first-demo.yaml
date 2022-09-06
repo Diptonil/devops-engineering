@@ -1,4 +1,4 @@
-# Key-value pairs
+# Maps (a data type)
 "One": 1
 "Two": 2
 "Three": "Trois"
@@ -11,7 +11,7 @@
 {"One": 1, "Two": 2, "Three": "Trois"}
 ---
 
-# List
+# Sequence (a data type)
 - first
 - First
 - Second
@@ -20,9 +20,9 @@
 
 # Block
 colours:
- - Black
- - White
- - Grey
+  - Black
+  - White
+  - Grey
 ---
 
 # Flow-Type Block

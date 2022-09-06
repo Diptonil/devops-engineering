@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<School name="Camp Half-Blood">
+    <Students>
+        <Student>
+            <name>Percy Jackson</name>
+            <parent>Poseidon</parent>
+            <eyes>Sea Green</eyes>
+        </Student>
+        <Student>
+            <name>Annabeth Chase</name>
+            <parent>Athena</parent>
+            <eyes>Grey</eyes>
+        </Student>
+        <Student>
+            <name>Nico Di Angelico</name>
+            <parent>Hades</parent>
+            <eyes>Black</eyes>
+        </Student>
+    </Students>
+</School>

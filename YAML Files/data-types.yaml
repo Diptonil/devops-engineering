@@ -3,17 +3,29 @@ name: Selina Kyle
 hero: "Catwoman"
 profession: 'thief'
 
+
 # Floats
 grade: 6.9
 
+
 # Integers
 total: 420
+
 
 # Booleans
 truth: Yes
 falsity: No
 
-# Specify Data Types
+
+# Dates
+someDate: 2002-04-10
+
+
+# Exponential
+exponential: 6.0254E21
+
+
+# Specified & Special Data Types
 zero: !!int 0
 party: !!int 1000
 binary: !!int 011001
@@ -26,4 +38,64 @@ permission: !!bool No
 name: !!str "Bruce... Banner"
 nothingness: !!null NULL
 date: !!timestamp 2002-12-14
-exponential: 6.0254E21
+
+
+# Sequence
+colours: !!seq
+  - Red
+  - Blue
+  - Green
+
+
+# Sparse Sequence
+life: !!seq
+  - work
+  - sleep
+  - 
+  - Null
+
+
+# Nested Sequences
+- numbers
+  - 1
+  - 2
+    - 2.0
+    - 2.5
+  - 3
+- alphabets
+  - a
+  - b
+
+
+# Maps
+name: !!str "Bruce Wayne"
+identity: !!map
+  public: Billionaire
+  private: Sad Emo
+  real: The Greatest Hero Ever
+  # Alternatively: `identity: {public: Billionaire, private: Sad Emo, real: The Greatest Hero Ever}`
+
+
+# Pairs
+timeStone: !!pairs
+  - owner: Doctor Strange
+  - owner: Christopher Nolan
+  # Alternatively: `timeStone: !!pairs [owner: Doctor Strange, owner: Christopher Nolan]`
+
+
+# Sets
+Devil: !!set
+  ? Lucifer
+  ? Yamraj
+  ? Mephisto
+  ? Beelzebub
+
+
+# Dictionaries
+villians: !!omaps
+  - Vecna:
+      name: Ten
+      powers: Basically everything Eleven does but better
+  - Joker:
+      name: Joe Chill
+      powers: Immortality by assurance that Batman won't ever kill him

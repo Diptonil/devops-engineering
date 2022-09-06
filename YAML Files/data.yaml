@@ -1,0 +1,13 @@
+---
+School:
+- name: Camp Half-Blood
+  students:
+  - name: Percy Jackson
+    parent: Poseidon
+    eyes: Sea Green
+  - name: Annabeth Chase
+    parent: Athena
+    eyes: Grey
+  - name: Nico Di Angelico
+    parent: Hades
+    eyes: Black

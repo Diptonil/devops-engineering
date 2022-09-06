@@ -1,0 +1,17 @@
+likings: &likes
+  language: Python
+  environment: Anaconda
+  framework: Pandas
+
+person1:
+  profession: ML Engineer
+  <<: *likes
+
+person2:
+  profession: Zookeeper
+  <<: *likes
+
+person3:
+  profession: Data Science Intern
+  <<: *likes
+  environment: "Windows 11 (last updated: a few seconds from now)"
