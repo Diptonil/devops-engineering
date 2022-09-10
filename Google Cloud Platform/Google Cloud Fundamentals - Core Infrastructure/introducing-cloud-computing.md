@@ -38,6 +38,12 @@ We can say that Cloud is a network of remote servers that are hosted on the inte
 - Approximately, 88 Zones and 29 Regions are supported.
 
 
+## Total Cost of Ownership (TCO)
+This is a company's expenditure when they choose to allocate resources for their projects. There are 2 types:
+1. CAPEX (Capital Expenditure): We spend a lot of money upfront. We guess whatever we are gonna need and spend on hardware, routers, cables, switches, networks, archives, datacenters, personnel training, etc. We may or may not need so many resources (or we may need more). So investing in CAPEX requires knowing exactly what we do.
+2. OPEX (Operational Expenditure): We spend on Cloud services rather than on-premise datacenters of maintaining our own cloud. We hence have to only be concerned with non-physical costs of service usage bills, instances, etc. We do not have to spend in equipment.
+
+
 ## Quiz
 
 1. Select two fundamental characteristics of cloud computing from this list.
