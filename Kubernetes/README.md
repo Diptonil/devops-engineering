@@ -124,3 +124,23 @@ A service has been said to have a permanent IP address to a pod. In truth, it is
 
 ## Minikube
 
+In an ideal case of Kubernetes usage, we would be required to run multiple master and slave nodes (more workers than masters). However, allocating resources for master and worker nodes on a single machine of lower specs (most likely any regular laptop) would be difficult. So in order to run a Kubernetes workload on a low spec system, we use an open-source tool called Minikube. It is basically used for testing purposes.<br />
+The architecture of Minikube is a bit different since there is nothing like different master and worker nodes. There would exist only one node that shall encapsulate both master and worker processes. That node would have a Docker runtime installed on it. It is basically a one-node k8s cluster that runs on VirtualBox in a local machine. The hypervisor can be VirtualBox or anything else.<br />
+
+
+## kubectl
+
+The command-line tool that lets us interact with the Kubernetes clusters created is `kubectl`. We recall that the API Server of the Master Process in the single node that Minikube creates is the entry point to the entire node, so to speak. It is responsible for delegating every task and looking into every aspect: creation, maintenance, etc. The API Server can be interacted to in many ways: GUIs, CLIs, APIs, etc.<br />
+The CLI tool for interacting with the API Server is `kubectl`. And this is the most powerful and standardized way of doing things. This command is not just limited to Minikube. This can be used for all imaginable purposes.
+
+
+## Running Minikube
+
+We must have a hypervisor installed for this. Examples include Hyperkit, VirtualBox, VMWare, etc. We may also proceed if we have Docker running on our system. Whatever we choose to use, we have to use the Minikube driver for that software to tell Minikube which hypervisor to use. For example, if VirtualBox is being used:
+```sh
+minikube start --vm-driver=virtualbox
+```
+If we want to set any driver permanently so that we don't have to mention it everytime:
+```sh
+minikube config set driver virtualbox
+```
