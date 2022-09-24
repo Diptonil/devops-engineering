@@ -280,3 +280,10 @@ These are the conflicts that developers may run into when working on the same pa
 1. `git pull`
 1. `git clone`
 1. `git rebase`
+
+
+## Common Use-Cases
+
+Check out the `Convenience Scripts` folder for the commands on common use cases:
+1. `forget-last-commit.sh`/ `forget-last-commit.bat`: Run this command to remove the last commit forever that could have had some commit message mistakes or something that did not need to be committed. Changes should not have been pushed. Any changes made would also stay. Changes would be unstaged.
+1. `fast-push.sh`/ `fast-push.bat`: Run this command while supplying the commit message in quotes and branch name to make a quick push of all changed files with one line of 

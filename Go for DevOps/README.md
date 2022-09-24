@@ -3,6 +3,12 @@
 In this section, a basic introductory discussion to Go would be explored. The discussion would be restricted to as much knowledge as would be necessary for working in the field of DevOps.
 
 
+## Why Go?
+
+- Every language used within the codebase of most Google applications (Java, Python, C/C++) had some limitations. Python was slow. Java had too much boilerplate and the environment had increasingly become complex as the newer versions had come out. C and C++ had compile-time issues.
+- Go was designed to provide a solution to it. It takes all their strengths and combines them together, keeping the weaknesses away.
+
+
 ## Some Basic Norms
 
 - Comments start with the usual double forward-slashes.
@@ -72,3 +78,8 @@ Basically, pointers in Go are very similar to those in C/C++.
 ## Calculations
 
 Compilation errors may happen in case of type mismatch. For example, `uint` and `int` are different and they would give compiler errors if not handled well.
+
+
+## Arrays
+
+We can create arrays here similar to C. We need to give the size as well, like: `var array = [10]` for a 10-element array.

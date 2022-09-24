@@ -118,7 +118,7 @@ A service has been said to have a permanent IP address to a pod. In truth, it is
 ## StatefulSet
 
 - This is a component meant specifically to run applications that are stateful like PostgreSQL, MongoDB, ElasticSearch, etc.
-- StatefulSet is for stateful app deployment what Deployment component is for steteless app deployments.
+- StatefulSet is for stateful app deployment what Deployment component is for stateless app deployments.
 - It is worth noting that this process of setting up StatefulSets in Kubernetes is generally tedious. This is the reason why databases and services like that are hosted externally, not in the k8s cluster. Generally, only Deployments are used here.
 
 
@@ -138,7 +138,7 @@ The CLI tool for interacting with the API Server is `kubectl`. And this is the m
 
 We must have a hypervisor installed for this. Examples include Hyperkit, VirtualBox, VMWare, etc. We may also proceed if we have Docker running on our system. Whatever we choose to use, we have to use the Minikube driver for that software to tell Minikube which hypervisor to use. For example, if VirtualBox is being used:
 ```sh
-minikube start --vm-driver=virtualbox
+minikube start --driver=virtualbox --no-vtx-check
 ```
 If we want to set any driver permanently so that we don't have to mention it everytime:
 ```sh

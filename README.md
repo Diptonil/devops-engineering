@@ -5,12 +5,13 @@ This project is geared towards the proper understanding of certain technologies 
 
 ## Roadmap
 
-- [x] Version Control
+- [x] Version Control: Git
 - [ ] YAML Files
 - [ ] Go for DevOps
 - [ ] Docker
+- [ ] CI/CD: Github Actions
 - [ ] Kubernetes
-- [ ] Redis
+- [ ] Databases: Redis
 - [ ] Microservices
 - [ ] Google Cloud Platform
 
