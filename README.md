@@ -8,6 +8,7 @@ This project is geared towards the proper understanding of certain technologies 
 - [x] Version Control: Git
 - [ ] YAML Files
 - [ ] Go for DevOps
+- [ ] Linux
 - [ ] Docker
 - [ ] CI/CD: Github Actions
 - [ ] Kubernetes
