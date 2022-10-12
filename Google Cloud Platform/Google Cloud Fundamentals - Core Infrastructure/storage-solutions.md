@@ -99,37 +99,3 @@ Many more ways to ship data exist from within services itself (like exporting ta
 ## Lab: Cloud Storage and Cloud SQL Introduction
 
 We need to create a VM instance, a Cloud Storage bucket and a MySQL instance. The MySQL instance needs to be connected to the VM instance created by adding its exposed External IP address in the Connections tab of the database.
-
-
-## Quiz
-
-1. Which statement describes the correct Cloud Storage use case?
-- [ ] Cloud Storage provides the root file system of a Linux virtual machine. 
-- [x] Cloud Storage provides durable and highly available object storage.
-- [ ] Cloud Storage provides data warehousing services.
-- [ ] Cloud Storage provides RDBMS (Relational Database Management System) services.
-2. Why would a customer consider the Coldline Storage class?
-- [ ] To improve security
-- [ ] To use the Coldline Storage API
-- [x] To save money on storing infrequently accessed data
-- [ ] To save money on storing frequently accessed data
-3. Which database service can scale to higher database sizes?
-- [ ] Cloud SQL
-- [x] Cloud Spanner
-- [ ] Bigtable
-- [ ] Firestore
-4. How are Firestore and Bigtable alike? (Select two answers.)
-- [x] They are both NoSQL databases.
-- [ ] They both offer SQL-like queries.
-- [ ] They both have a free daily quota.
-- [x] They are both highly scalable.
-5. You manufacture devices with sensors and need to stream huge amounts of data from these devices to a storage option in the cloud. Which storage option is the best choice for your application?
-- [ ] Cloud Spanner
-- [ ] Firestore
-- [ ] BigQuery
-- [x] Bigtable
-6. Your application needs to store data with strong transactional consistency, and you want seamless scaling up. Which storage option is the best choice for your application?
-- [ ] Cloud Storage
-- [ ] Cloud SQL
-- [x] Cloud Spanner
-- [ ] Firestore

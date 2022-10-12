@@ -42,39 +42,3 @@ We can say that Cloud is a network of remote servers that are hosted on the inte
 This is a company's expenditure when they choose to allocate resources for their projects. There are 2 types:
 1. CAPEX (Capital Expenditure): We spend a lot of money upfront. We guess whatever we are gonna need and spend on hardware, routers, cables, switches, networks, archives, datacenters, personnel training, etc. We may or may not need so many resources (or we may need more). So investing in CAPEX requires knowing exactly what we do.
 2. OPEX (Operational Expenditure): We spend on Cloud services rather than on-premise datacenters of maintaining our own cloud. We hence have to only be concerned with non-physical costs of service usage bills, instances, etc. We do not have to spend in equipment.
-
-
-## Quiz
-
-1. Select two fundamental characteristics of cloud computing from this list.
-- [x] Customers can scale their resource use up and down.
-- [ ] Customers are required to commit to multi-year contracts.
-- [ ] Providers always dedicate physical resources to each customer.
-- [ ] All resources are open source.
-- [x] Resources are available from anywhere over the network.
-2. Which one of the following statements is true regarding the ability to scale cloud computing resources up and down?
-- [ ] Cloud computing does not provide a way to scale resources. 
-- [ ] Only CPU and memory resources are elastic.
-- [ ] Only storage resources are elastic.
-- [x] CPU, memory, and storage resources are elastic.
-3. What cloud computing service binds application code to libraries that give access to the infrastructure an application needs?
-- [x] Platform as a service
-- [ ] Infrastructure as a service
-- [ ] Virtualized data centers
-- [ ] Hybrid cloud
-- [ ] Software as a service
-4. What cloud computing service provides raw compute, storage, and network resources that are organized similarly to physical data centers?
-- [x] Infrastructure as a service
-- [ ] Database as a service
-- [ ] Software as a service
-- [ ] Platform as a service
-5. Why might a Google Cloud customer use resources in several zones within a region?
-- [x] For improved fault tolerance
-- [ ] For expanding services to customers in new areas
-- [ ] For better performance
-- [ ] For getting discounts on other zones
-6. Who benefits the most from billing by the second for cloud resources, such as virtual machines?
-- [ ] Customers who create too few virtual machines to get discounts
-- [x] Customers who create and run many virtual machines
-- [ ] Customers who create virtual machines that run commercially licensed operating systems
-- [ ] Customers who create many virtual machines and leave them running for months
