@@ -6,7 +6,8 @@ This is the first course in the series offered by Google in Coursera to prepare 
 ## Sequence
 
 The sequence to progress with the material:
-1. Introducing Cloud Computing
-1. Resources & Access
+1. <a href="introducing-cloud-computing.md">Introducing Cloud Computing</a>
+1. <a href="resources-and-access.md">Resources & Access</a>
 1. <a href="virtual-machines.md">Virtual Machines</a>
-1. Storage Solutions
+1. <a href="storage-solutions.md">Storage Solutions</a>
+1. <a href="cloud-containers.md">Containers in Cloud</a>

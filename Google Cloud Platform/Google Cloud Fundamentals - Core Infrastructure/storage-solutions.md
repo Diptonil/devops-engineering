@@ -98,6 +98,8 @@ Many more ways to ship data exist from within services itself (like exporting ta
 
 ## Lab: Cloud Storage and Cloud SQL Introduction
 
+We need to create a VM instance, a Cloud Storage bucket and a MySQL instance. The MySQL instance needs to be connected to the VM instance created by adding its exposed External IP address in the Connections tab of the database.
+
 
 ## Quiz
 

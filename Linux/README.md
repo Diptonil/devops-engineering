@@ -1,7 +1,8 @@
 # Linux
 
 The use of Linux for DevOps is logical since it has all the benefits suited for development and deployment that other OSs aren't particularly geared to handle. Modern servers are mainly reliant on the distros provided by Linux. <br />
-A *distribution* (distro) is a variation of an OS that has the Linux kernel as well as GNU tools, other softwares and a package manager. Every distro has the kernel core common. These can either be commercial or free. The distro most widely opted for in this field is Ubuntu.
+A *distribution* (distro) is a variation of an OS that has the Linux kernel as well as GNU tools, other softwares and a package manager. Every distro has the kernel core common. These can either be commercial or free. The distro most widely opted for in this field is Ubuntu.<br />
+For in-depth exploration of the basic commands, it is highly recommended to check out the manual pages for the same command. Practicing things in the terminal instead of the GUI is a sure way to gain proficiency rather than learning up commands and never getting back to it after one complete session of learning.
 
 
 ## Running Ubuntu
@@ -20,4 +21,21 @@ There are multiple ways to learn Linux. However, out of these, sum are not wholl
 - Maintenance & ownership costs are less than the competitors OSs.
 - Extremely secure.
 - It is free and open-source. Servers of major Cloud vendors leverage this to cut costs.
-- Developer friendly. 
+- Developer friendly.
+
+
+## Contents
+
+The markdown files here detail every part of Linux covered here:
+
+- Linux Terminal
+    - Introduction
+    - Specific Commands
+    - Redirection
+    - Pipelining
+- Linux Manual
+- Linux Commands
+    - Commands
+    - Aliases
+- Linux File System
+- Linux Software Ecosystem
