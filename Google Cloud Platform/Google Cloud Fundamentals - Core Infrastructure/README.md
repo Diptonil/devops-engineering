@@ -11,6 +11,8 @@ The sequence to progress with the material:
 1. <a href="virtual-machines.md">Virtual Machines</a>
 1. <a href="storage-solutions.md">Storage Solutions</a>
 1. <a href="cloud-containers.md">Containers in Cloud</a>
+1. <a href="deploying-apps.md">Deployment of Apps</a>
+1. <a href="logging-and-monitoring.md">Logging and Monitoring</a>
 
 
 ## Labs
