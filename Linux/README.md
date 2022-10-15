@@ -38,4 +38,13 @@ The markdown files here detail every part of Linux covered here:
     - Commands
     - Aliases
 - Linux File System
+    - File Extensions
+    - Wildcards
+    - Searching Files
+    - Creating Files
+    - Permissions
+    - Archiving
+    - Compression
 - Linux Software Ecosystem
+- Linux Special Files
+    - The `.profile` file.
