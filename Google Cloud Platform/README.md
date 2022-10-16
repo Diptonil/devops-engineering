@@ -15,4 +15,9 @@ For example, we might employ granularity using *GKE*s, bare metal access to hard
 ## Contents:
 
 1. **Google Cloud Fundamentals - Core Infrastructure**: This contains materials relating to a Coursera course for understanding the platform and the services that it offers. This is an introductory level course and the first in its series.
+    - Offers a brief overview of all services.
+    - Special mention to the Storage services, which are explained in great detail.
+    - Services discussed **properly**: *Cloud SQL*, *Cloud Storage*, *Cloud Spanner*, *Firestore*, *Bigtable*, *App Engine* & *Cloud Functions*.
 1. **Essential Google Cloud Infrastructure - Foundation**: This contains materials regarding the core infrastructure - the underlying basic framework that powers the complex systems. This is an introductory level course and the second in its series.
+    - Offers special insight into the Networking and Compute services.
+    - Services discussed: *Cloud NAT*, *Cloud DNS*, *VPC Networks*, *Cloud Shell*, *Cloud Console* & *Compute Engine*.

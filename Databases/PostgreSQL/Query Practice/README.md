@@ -26,18 +26,17 @@ For a column names, if it contains more than one entries for a particular name (
     - Do not use `AND`s or `OR`s here. A simple comma is sufficient.
     - Explicitly mentioning the `ASC` or `DESC` might be preferable for users who are not too experienced in managing or working with databases.
 - **LIKE**: It is a clause that can be added in conjunction to WHERE to filter out data by matching patterns. A code snippet is:
-```sql
-...
-WHERE col1 LIKE 'A%x' AND
-      col2 LIKE '%twee%' AND 
-      col3 LIKE '_h%';
-```
     - We note that the use of multiple conditions require ANDs or ORs and not commas.
     - The first example matches elements starting with A and ending with 'x'.
     - The second example matches elements that contain the word 'twee'.
     - The third example matches elements having the second character as 'h'.
     - We cannot completely use any forms of Regex by applying '[]' instead of using ORs just to cut short the code.
-    - We may use NOT to alter the boolean conditions of an expression (`NOT LIKE...`). Cre must be taken of any ANDs or ORs, if lying around. SOetimes queries don't work as expected just because ANDs or ORs alter the logic and we do not pay attention.
+    - We may use NOT to alter the boolean conditions of an expression (`NOT LIKE...`). Cre must be taken of any ANDs or ORs, if lying around. Sometimes queries don't work as expected just because ANDs or ORs alter the logic and we do not pay attention.
+    ```sql
+    WHERE col1 LIKE 'A%x' AND
+        col2 LIKE '%twee%' AND 
+        col3 LIKE '_h%';
+    ```
 
 
 ## Standard SQL Functions
