@@ -12,7 +12,7 @@ For example, we might employ granularity using *GKE*s, bare metal access to hard
 
 
 
-## Contents:
+## Coursera Courses:
 
 1. **Google Cloud Fundamentals - Core Infrastructure**: This contains materials relating to a Coursera course for understanding the platform and the services that it offers. This is an introductory level course and the first in its series.
     - Offers a brief overview of all services.
@@ -21,3 +21,9 @@ For example, we might employ granularity using *GKE*s, bare metal access to hard
 1. **Essential Google Cloud Infrastructure - Foundation**: This contains materials regarding the core infrastructure - the underlying basic framework that powers the complex systems. This is an introductory level course and the second in its series.
     - Offers special insight into the Networking and Compute services.
     - Services discussed: *Cloud NAT*, *Cloud DNS*, *VPC Networks*, *Cloud Shell*, *Cloud Console* & *Compute Engine*.
+
+
+## Beyond the Courses
+
+1. **Commands**: This directory has the explanation of mostly used commands so that it may serve as a point of reference while working in Cloud.
+1. **Cloud Digital Leader Certification Preparation**: This directory has the materials relevant for passing the GCP CDL certification.

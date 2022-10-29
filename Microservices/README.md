@@ -73,4 +73,4 @@ One of the major provider of tools to work with Microservices is a platform call
 
 Some sample, vanilla projects, just to get familiar with the architecture of the system, have been created in this repository. There are certain basic steps that are to be followed for the creation of any microservice. These steps are documented in `creating-microservices.md` file in abstraction. They are not full-fledged projects and are just simple experiments:
 
-1. Superhero Character Voting: This example runs a frontend service in React, 2 backend services of voting for a superhero and reviewing the results both written in Django. This is the most basic example.
+1. Superhero Character Voting: This example runs a frontend service in React, 2 backend services of voting for a superhero and reviewing the results both written in Django. This is the most basic example (*not yet complete*).
