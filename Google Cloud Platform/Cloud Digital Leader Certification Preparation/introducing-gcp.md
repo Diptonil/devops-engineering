@@ -8,8 +8,28 @@ Digital Transformation is the adoption of newer digital tech to transform busine
 - **Smart Analytics**: Data can be stored on Cloud to perform certain operations on it for gathering analytics and business intelligence. Ex: *Looker*.
 - **AI**: Prior to the adoption of Cloud, AI and ML were domains that required specialised personnel to support study and research. Modern innovations, however, has made it easier for AI to be incorporated. Ex: *Vertex AI*. 
 - **Security**: Security is always being upgraded and taken care of in the Cloud. Latest and the most recognised technologies are being used to secure all resources and data in Cloud.Ex: *IAM*.
-- **Business Applications platform portfolio**: The CSPs are built atopn robust and well-documented APIs that are standardized. So, business solutions can focus on building themselves up and the use the APIs provided by the CSPs rather than having to reinvent the wheel. Ex: *Cloud SDKs*, *GCP API Docs*, etc.
+- **Business Applications platform portfolio**: The CSPs are built atop robust and well-documented APIs that are standardized. So, business solutions can focus on building themselves up and the use the APIs provided by the CSPs rather than having to reinvent the wheel. Ex: *Cloud SDKs*, *GCP API Docs*, etc.
 - **Database and storage solutions**: CSPs have guaranteed SLAs of data durability as well as migrate and secure data. Ex: *Cloud Storage*.
+
+
+## Google Cloud Compliance
+
+There are certain service guarantees and certificates that Google has to show how compliant they are.
+- ISO/IEC 27001
+- ISO/IEC 27017
+- ISO/IEC 27018
+- ISO/IEC 27701
+- SOC 1
+- SOC 2
+- SOC 3
+- PCI DSS
+- FIPS 140-2
+- HIPPA
+- PHIPA
+- CSA STAR
+- FedRAMP
+- CJIS
+- GDPR
 
 
 ## Shared responsibility Model

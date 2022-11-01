@@ -8,6 +8,7 @@
 - **Serverless Computing**: This process utilizes servers (of course), but is named so because we *do not need to care about any servers*. We can just upload the code, choose duration up till when the instance should run and the memory to allot for running the code. The CSP takes care of the rest.
 - **Cold Starts**: When an instance takes a longer time to start up (for whatever reason), certain operations that it is expected to be able to execute might get skipped out on. This is called a cold start.
 - **Healthy Servers**: Machines that are in the oeprational state. Unhealthy machines are the ones that either face hardware difficulties, power outages, excessive loads, et cetera that basically impede the workloads from functioning.
+- **Serverless Services**: These services have the capacity to scale automatically and are highly available. To use these, we don't need to worry about the underlying architecture (that is already taken care of). Billing is based on execution of task. We don't need to pay for idle servers. They can scale to zero servers when no loads are being handled.
 
 
 - **Latency**: Time delay between two physical systems. For inter-regional latencies, it is generally triple digit (around 500 ms) and for inter-zonal latencies, it is double digit (around 10 ms). The numbers would vary, of course. 
