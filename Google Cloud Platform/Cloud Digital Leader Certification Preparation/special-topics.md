@@ -111,6 +111,30 @@ It is a service to modernise existing apps on other CSPs or on-premises and buil
 - Login is seamless. As soon as they access a software, they are presented with a logic screen. That is the only one time they need to login. They don't have to keep on reentering their details again and again.
 
 
-## Service Level Agreements
+## Agreements
 
-It is a formal commitment between a customer and a provider. 
+These terms might look fancy on papaer but are actually quite self-explanatory from the context itself.
+- **Service Level Agreements**: It is a formal commitment between a customer and a provide about the *expected level of service*. When a customer meets its obligations under the SLA but the service level by the vendor is not met, customer will be eligible to recieve the compensation: financial or service credits.
+- **Service Level Indicators**: It is a metric that indicates that measure of performance a customer is recieving at a given time. It can be uptime, performance, latency, error rate, etc.
+- **Service Level Objective**: The objective(s) that a provider has agreed to provide. It is represented as a specific target percentage over a period of time.
+
+
+## Charging Cycle
+
+There are two ways GCP charges us:
+- **Monthly Billing**: Costs are charged on a regular monthly basis.
+- **Threshold Billing**: Cost is charged when the account has incurred a specific value and has went over it. <br />
+We get to choose the payment cycle if only we have an invoiced account.
+
+
+## Pricing Overview
+
+There are 7 models, all of which are very intuitive to understand:
+- **Free Trial**: Trial with limitations.
+- **Free Tier**: Services with minimum monthly limits of free-use (even when the project is associated with a billing account).
+- **On-Demand**: Regular prices.
+- **Committed Use Discounts**: Price lower than on-demand by agreeing to a contract of 1 or 3 years.
+- **Sustained Use Discounts**: Passive savings when using resources past a period of continued use.
+- **Preemptible VM discounts**: Instances with a lot of savings but with the cost of being interrupted at any time.
+- **Flat-Rate Pricing**: Prefer a stable cost for queries rather than paying on-demand (only BigQuery).
+- **Sole-Tenant Model**: Higher cost of ownership of a single compute machine in absolute terms.

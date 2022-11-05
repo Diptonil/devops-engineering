@@ -112,3 +112,33 @@ Computing Power is the throughput measured at which the computer can complete a 
     - A project may serve as a namespace, which means that resource names may be reused across different projects but should be unique within a single project.
     - When billing is enabled, each project is associated with a billing account. Multiple projects can have their resource usage billed to the same account, though.
 - A **Folder** allows the logical grouping of multiple projects that share IAM permissions. They are used commonly to isolate projects for different departments or for different environments. For example, we may have a project for the beta version of an app and another for the regular version. We may have two different folders for this type of thing - one for development and one for production, each of which should have these 2 projects for proper streamlined workflow.
+
+
+## Support Plans
+
+Every CSP provides support plans that help companies and businesses to adopt to Cloud or solve any immediate query that they have. Types of support:
+- **Basic Support**
+    - Free.
+    - Email, phone and chat support for *billings*. This is for others as well.
+- **Standard Support**
+    - $29 (unupdated amount) per month.
+    - 4 hour response time for critical infrastructure failures.
+    - Technical support over email.
+    - Only English.
+    - Support available for 5 hours per day for weekdays.
+- **Enhanced Support**
+    - $500 (unupdated) per month.
+    - 1 hour response time for critical infrastructure failures.
+    - Technical support over email & phone.
+    - English, Japanese, Mandarin Chinese, Korean.
+    - Support available for 24/7.
+- **Premium Support**
+    - Negotiable costs per month.
+    - 15 minutes response time for critical infrastructure failures.
+    - Technical support over email & phone.
+    - English, Japanese, Mandarin Chinese, Korean.
+    - Support available for 24/7.
+    - Technical Account Manager available.
+    - Training credits can be provided.
+    - Assured support.
+    - Provides a bunch of services under Premium Support Services section.

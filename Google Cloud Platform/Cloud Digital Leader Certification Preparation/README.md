@@ -28,6 +28,7 @@ Refer to the markdown files for the following topics in the given order.
     - GCP for Government
     - Computing Power Evolution
     - Projects & Folders
+    - Support Plans
 1. **Google Cloud Adoption Framework (GCAF)**
     - Composition
     - Themes
@@ -151,6 +152,9 @@ Refer to the markdown files for the following topics in the given order.
         - Security Command Center
         - Google Cloud directory Sync
         - Compliance Reports Manager
+        - Assured Workloads
+    - **Premium & Enhanced Support Services**
+    - **Payment Services**
 1. **Special Topics**
     - Data Warehouses
     - Key-Value Stores
@@ -164,6 +168,10 @@ Refer to the markdown files for the following topics in the given order.
         - Strategies
         - Path
     - Single Sign-Ons (SSO)
+    - Agreements
+        - SLO
+        - SLI
+        - SLA
 1. **Costs**
     - 
 1. **Tricky Questions & Answers**
