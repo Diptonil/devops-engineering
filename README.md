@@ -7,8 +7,10 @@
     <img src="https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" />
     <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
     <img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white" />
+    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
     <img src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white" />
     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
 </span>
 
 
@@ -37,9 +39,16 @@ This project is geared towards the proper understanding of certain technologies 
 - [ ] Kubernetes
 - [ ] Databases
     - [ ] Redis
+    - [ ] MongoDB
     - [ ] PostgreSQL
 - [ ] Microservices
 - [ ] Google Cloud Platform
+    - [x] Google Cloud Digital Leader Certification Preparation
+    - [ ] Google Cloud Associate Cloud Engineer Certification Preparation
+    - [ ] GCP Commonly Used Commands
+    - [ ] Coursera Courses
+        - [ ] Google Cloud Fundamentals - Core Infrastructure
+        - [ ] Essential Google Cloud Infrastructure - Foundation
 
 
 ## Package Managers
