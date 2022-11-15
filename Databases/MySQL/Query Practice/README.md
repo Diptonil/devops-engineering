@@ -25,6 +25,15 @@ For a column names, if it contains more than one entries for a particular name (
     - `ORDER BY col1, col2` *does not* mean `ORDER BY col2, col1`. The first means that we display data where `col1` is sorted in ascending order and in case we have similar data rank while sorting (there occur, for example, 2 rows having a value of 70), the conflict is resolved by sorting the data on the basis of ascending order of `col2`. The same, if applied to the second statement, would give us different meanings.
     - Do not use `AND`s or `OR`s here. A simple comma is sufficient.
     - Explicitly mentioning the `ASC` or `DESC` might be preferable for users who are not too experienced in managing or working with databases.
+- **OFFSET**: It is used to skip a given number of records (rows). Always used in conjunction to ORDER BYs.
+    - Can be used in conjunction with FETCH. However, the same functionality may be obtained with a LIMIT clause as well. The syntax transforms into: `LIMIT 1 OFFSET 3`. We don't need to mention ROWS or anything else as such.
+    - This example skips over the first row of the ordered result:
+    ```sql
+    SELECT name
+    FROM Employee
+    ORDER BY Salary
+    OFFSET 1 ROWS;
+    ```
 - **LIKE**: It is a clause that can be added in conjunction to WHERE to filter out data by matching patterns. A code snippet is:
     - We note that the use of multiple conditions require ANDs or ORs and not commas.
     - The first example matches elements starting with A and ending with 'x'.

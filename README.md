@@ -38,9 +38,10 @@ This project is geared towards the proper understanding of certain technologies 
 - [ ] CI/CD: Github Actions
 - [ ] Kubernetes
 - [ ] Databases
+    - [ ] PostgreSQL
+    - [ ] MySQL
     - [ ] Redis
     - [ ] MongoDB
-    - [ ] PostgreSQL
 - [ ] Microservices
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
