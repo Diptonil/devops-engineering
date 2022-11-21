@@ -67,10 +67,3 @@ Cons: Switching between projects is tedious, cross-cutting is difficult, resourc
 ## Tools
 
 One of the major provider of tools to work with Microservices is a platform called **Hashicorp**. Their services range from security to infrastructure and application. Their tools are becoming a standard in this field, in conjunction to container orchestration technologies like **Kubernetes**.
-
-
-## Samples
-
-Some sample, vanilla projects, just to get familiar with the architecture of the system, have been created in this repository. There are certain basic steps that are to be followed for the creation of any microservice. These steps are documented in `creating-microservices.md` file in abstraction. They are not full-fledged projects and are just simple experiments:
-
-1. Superhero Character Voting: This example runs a frontend service in React, 2 backend services of voting for a superhero and reviewing the results both written in Django. This is the most basic example (*not yet complete*).

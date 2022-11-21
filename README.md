@@ -11,6 +11,7 @@
     <img src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white" />
     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
     <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </span>
 
 
@@ -28,24 +29,47 @@ This project is geared towards the proper understanding of certain technologies 
     - Automation Tools
 - [ ] Go for DevOps
 - [x] Linux
-    - Manual
-    - Terminal
-    - Commands
-    - File System
-    - Software Ecosystem
-    - Special Files
+    - [x] Manual
+    - [x] Terminal
+    - [x] Commands
+    - [x] File System
+    - [x] Software Ecosystem
+    - [ ] Special Files
 - [ ] Docker
-- [ ] CI/CD: Github Actions
+    - [ ] Primary Concepts
+        - [x] Container Names
+        - [x] Environment Variables
+        - [x] Port Mapping
+        - [x] Detachment
+        - [x] Interactive Mode
+    - [ ] Dockerfiles
+        - [ ] Docker Image Size Decreasing Techniques
+        - [ ] Multi-Stage Builds
+    - [ ] Important Commands
+        - [ ] Using Nginx
+- [ ] CI/CD
+    - [x] Github Actions
+    - [ ] Jenkins
 - [ ] Kubernetes
 - [ ] Databases
     - [ ] PostgreSQL
+        - [x] RDBMS
+        - [ ] ER & Schema Diagrams
+        - [ ] Relational Database Design Techniques
+        - [ ] PostgreSQL Design Principles
     - [ ] MySQL
+        - [ ] Important Querying Techniques
+        - [ ] Query Practice
+        - [ ] SQL Clauses
+        - [ ] MySQL Design Principles
     - [ ] Redis
+        - [x] Redis Design Principles
     - [ ] MongoDB
+        - [ ] MongoDB Design Principles
 - [ ] Microservices
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
-    - [ ] Google Cloud Associate Cloud Engineer Certification Preparation
+    - [ ] Google Associate Cloud Engineer Certification Preparation
     - [ ] GCP Commonly Used Commands
     - [ ] Coursera Courses
         - [ ] Google Cloud Fundamentals - Core Infrastructure
@@ -54,4 +78,15 @@ This project is geared towards the proper understanding of certain technologies 
 
 ## Package Managers
 
-To download and install various dependencies and softwares efficiently, we would need package managers. For Mac & Linux, it is brew. For Linux, it can be apt or packman or more. For Windows, we may use Scoop or Chocolatey. The former is, in any case, recommended to suit developmental needs.
+To download and install various dependencies and softwares efficiently, we would need package managers.
+- `brew`: Mac & Linux.
+- `pacman`: Linux.
+- `apt`: Linux.
+- `scoop`: Windows. Good for developmental needs.
+- `chocolatey`: Windows.
+
+
+## All Referenced Tools
+
+1. [Dive](https://github.com/wagoodman/dive): A tool to reduce Docker image size by layer-by-layer analysis.
+1. [Docker Slim](https://github.com/docker-slim/docker-slim): A tool to securely reduce Docker image size and gain insight on an image's properties and data.
