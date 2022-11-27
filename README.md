@@ -67,6 +67,7 @@ This project is geared towards the proper understanding of certain technologies 
     - [ ] MongoDB
         - [ ] MongoDB Design Principles
 - [ ] Microservices
+    - [ ] gRPC
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
     - [ ] Google Associate Cloud Engineer Certification Preparation

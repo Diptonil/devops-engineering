@@ -58,6 +58,6 @@ This section of the repo consists of multiple important concepts that are releva
     - Detachment
     - Port Mapping
     - Environment Variables
-- <a href="commands.md">Overview of Docker Commands</a>
-- Commands
-    1. Run a basic web server (Nginx)
+- **Containers**
+    - Working With Nginx
+- <a href="commands-overview.md">Overview of Docker Commands</a>

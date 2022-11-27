@@ -5,7 +5,13 @@ Most of the important special files in Linux let us leverage certain functionali
 
 ## The `.profile` File
 
-- These files are primarily used to set environmental items for every user.
+- These files are primarily used to set environment items for every user.
 - Like `autoexec.bat` file of DOS, it is a start-up file for an UNIX user. It is located in the `~` directory.
 - `.profile` is executed by bash when you get a normal shell process like opening a terminal tool.
 - When we export an environment variable, it gets stored here.
+
+
+## The `.bashrc` File
+
+- This gets executed everytime a system boot happens.
+- We can add custom environment variables here.
