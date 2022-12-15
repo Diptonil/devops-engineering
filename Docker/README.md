@@ -52,12 +52,15 @@ It is the *instance of an image running as a separate, individual process*. When
 
 ## Contents
 
-This section of the repo consists of multiple important concepts that are relevant to gain mastery over Docker. It is recommended to go in this order:
-- <a href="concepts.md">Docker Concepts</a>
-    - Container Names
-    - Detachment
-    - Port Mapping
-    - Environment Variables
+This section of the repo consists of multiple important concepts that are relevant to gain mastery over Docker. It is recommended to go in this order:    
 - **Containers**
     - Working With Nginx
+    - Container Concepts
+        - Container Names
+        - Detachment
+        - Port Mapping
+        - Environment Variables
+        - Networking
+    - General Information
 - <a href="commands-overview.md">Overview of Docker Commands</a>
+    - Network Commands

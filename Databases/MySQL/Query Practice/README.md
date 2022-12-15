@@ -50,6 +50,7 @@ For a column names, if it contains more than one entries for a particular name (
     - We can use `SELECT col1 AS name, col2 AS age` to change the column names when the result is displayed.
     - We can use it in conjunction with complex functions to make references. For example: `CAST(col1 AS INT(2))`.
 - **JOIN**: Refer to the discussion.
+- **CASE**: 
 
 
 ## Joins
