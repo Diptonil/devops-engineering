@@ -62,5 +62,10 @@ This section of the repo consists of multiple important concepts that are releva
         - Environment Variables
         - Networking
     - General Information
+- **Images**
+    - General Information
+    - Docker Hub
+    - Dockerfiles
+    - Dockerfile Size Optimization Techniques
 - <a href="commands-overview.md">Overview of Docker Commands</a>
     - Network Commands
