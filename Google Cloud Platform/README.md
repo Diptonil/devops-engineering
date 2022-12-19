@@ -11,7 +11,6 @@ It is important to realise that there exists more than one solution for a partic
 For example, we might employ granularity using *GKE*s, bare metal access to hardware to do the same task that might be done using Serverless or Autoscaling, which is very abstract. So, the same task that can be done using a *Compute Engine* by installing MySQL and starting up the database on it can also be done by creating a Cloud SQL instance.
 
 
-
 ## Coursera Courses:
 
 1. **Google Cloud Fundamentals - Core Infrastructure**: This contains materials relating to a Coursera course for understanding the platform and the services that it offers. This is an introductory level course and the first in its series.
@@ -23,7 +22,9 @@ For example, we might employ granularity using *GKE*s, bare metal access to hard
     - Services discussed: *Cloud NAT*, *Cloud DNS*, *VPC Networks*, *Cloud Shell*, *Cloud Console* & *Compute Engine*.
 
 
-## Beyond the Courses
+## Contents
 
-1. **Commands**: This directory has the explanation of mostly used commands so that it may serve as a point of reference while working in Cloud.
-1. **Cloud Digital Leader Certification Preparation**: This directory has the materials relevant for passing the GCP CDL certification.
+- **Cloud Digital Leader Certification Preparation**: This directory has the materials relevant for passing the GCP CDL certification. Contains details about all basic services (primarily).
+- **Commands**: This directory has the explanation of mostly used commands so that it may serve as a point of reference while working in Cloud.
+- **Courses**: This section includes all courses.
+- **Practical Operations**: This file illustrates how to safely go about dealing with creation and operation of projects.

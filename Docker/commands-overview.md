@@ -15,6 +15,19 @@ The set of commands used generally are:
 - `docker logout`: Logs out of Docker account.
 
 
+## Container Commands
+
+- `docker container stop <containername>`: Stops a container. Does not delete it. Its UFS still exists and is intact.
+- `docker container run <imagename>`: Runs a container with the image as given. If the image is not locally found, `docker image pull` is executed first.
+- `docker container run -d <imagename>`: Runs a container with the image as given in detached mode. It runs, but in the background without consuming a whole shell for no reason. We may want that sometimes. Depends on the use-case.
+- `docker container run <imagename>`: Runs a container with the image as given in interactive mode. It runs and provides us with a shell that we can use to access the contents of the container. So, a whole terminal needs to be dedicated to interact with the running container. We may want that sometimes. Depends on the use-case.
+- `docker container run --name <containername> <imagename>`: Runs a container that has a given name. Normally, containers are given random names. If they have names, they are easily identifiable and *rememberable* instead of having to use IDs.
+- `docker container run -p <machineport1>:<containerport1> -p <machineport2>:<containerport2> ... <imagename>`: Runs a container with port forwarding. The Dockerfile of every image may have a list of ports opened up for accessing the container (one or more). We can accordingly expose a certain port of the container and attach it to the host machine.
+- `docker container run -v <volumename1>:<volumepath1> -p <volumename2>:<volumepath2> ... <imagename>`: Runs a container with named volumes. The Dockerfile of every image may have a list of volumes that can be used. By using this command, we make sure that the volumes don't have some gibberish ID and are named properly.
+- `docker container run -v /<hostpath1>:/<containerpath1> -p <hostpath2>:<containerpath2> ... <imagename>`: Runs a container with bind mounts. 
+- `docker container exec <flags> <continername>`: The Docker `run` command is used to start a new container from an image. However, this command is used to run operations on currently running containers for purposes of examination or whatever the use-case may deem.
+
+
 ## Network Commands
 
 - `docker network ls`: This lists down all the available networks. By default, we have 3 - the bridge network (default), the host network and a `none` network.
@@ -36,3 +49,11 @@ The set of commands used generally are:
 - `docker image build -t <imagename> -f <dockerfilename> .`: Build an image out of the Dockerfile in this directory with a custom Dockerfile name.
 - `docker image prune`: This would clean up dangling images.
 - `docker system prune`: Cleans up all the images.
+
+
+## Volume Commands
+
+- `docker volume ls`: Shows all the volumes that are currently on the host machine. It gives the volume name (which is a huge ID) and the driver.
+- `docker volume inspect <volumename>`: If we take that long ID and inspect it, we might be able to tell where in the host machine it is running as well as have some metadata about the volume.
+- `docker volume prune`: Cleans up unused volumes.
+- `docker volume create <volumename>`: Creaes volumes ahead of its use.

@@ -61,6 +61,9 @@ This section of the repo consists of multiple important concepts that are releva
         - Port Mapping
         - Environment Variables
         - Networking
+        - Persistent Data
+        - Volumes
+        - Bind Mounts
     - General Information
 - **Images**
     - General Information

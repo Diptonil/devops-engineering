@@ -26,7 +26,3 @@ An image isn't simply a big blob of data. It is composed of numerous peels known
 ## Dockerfiles
 
 These are actually the scripts that are responsible for creating images. They have been dealt with in `dockerfiles.md`.
-
-
-## Container Lifetime & Persistent Data
-
