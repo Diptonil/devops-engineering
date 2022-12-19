@@ -36,17 +36,27 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] Software Ecosystem
     - [ ] Special Files
 - [ ] Docker
-    - [ ] Primary Concepts
-        - [x] Container Names
+    - [x] Containers
+        - [x] Names
         - [x] Environment Variables
         - [x] Port Mapping
         - [x] Detachment
         - [x] Interactive Mode
-    - [ ] Dockerfiles
-        - [ ] Docker Image Size Decreasing Techniques
+        - [x] Networks
+        - [x] Volumes
+        - [x] Bind Mounts
+    - [ ] Images
+        - [x] Basic Concepts
+        - [x] Docker Hub
+        - [x] Dockerfiles
+        - [x] Docker Image Size Decreasing Techniques
         - [ ] Multi-Stage Builds
     - [ ] Important Commands
-        - [ ] Using Nginx
+        - [ ] Containers
+        - [x] Images
+        - [ ] Volumes
+        - [ ] Networks
+        - [ ] Miscelleaneous
 - [ ] CI/CD
     - [x] Github Actions
     - [ ] Jenkins
@@ -75,11 +85,15 @@ This project is geared towards the proper understanding of certain technologies 
     - [ ] Coursera Courses
         - [ ] Google Cloud Fundamentals - Core Infrastructure
         - [ ] Essential Google Cloud Infrastructure - Foundation
+- [ ] System Design
+    - [ ] Low-Level Design
+    - [ ] High-Level design
+    - [ ] Design Examples
 
 
 ## Package Managers
 
-To download and install various dependencies and softwares efficiently, we would need package managers.
+To download and install various dependencies and softwares efficiently, we would need package managers. No matter what environment one is in, it would be fundamental to have at least one.
 - `brew`: Mac & Linux.
 - `pacman`: Linux.
 - `apt`: Linux.
@@ -91,3 +105,4 @@ To download and install various dependencies and softwares efficiently, we would
 
 1. [Dive](https://github.com/wagoodman/dive): A tool to reduce Docker image size by layer-by-layer analysis.
 1. [Docker Slim](https://github.com/docker-slim/docker-slim): A tool to securely reduce Docker image size and gain insight on an image's properties and data.
+1. [Docker Hub](https://hub.docker.com/): The official public container repository for Docker.
