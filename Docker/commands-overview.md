@@ -26,6 +26,8 @@ The set of commands used generally are:
 - `docker container run -v <volumename1>:<volumepath1> -p <volumename2>:<volumepath2> ... <imagename>`: Runs a container with named volumes. The Dockerfile of every image may have a list of volumes that can be used. By using this command, we make sure that the volumes don't have some gibberish ID and are named properly.
 - `docker container run -v /<hostpath1>:/<containerpath1> -p <hostpath2>:<containerpath2> ... <imagename>`: Runs a container with bind mounts. 
 - `docker container exec <flags> <continername>`: The Docker `run` command is used to start a new container from an image. However, this command is used to run operations on currently running containers for purposes of examination or whatever the use-case may deem.
+- `docker contaienr rm <containername>`: Deletes a stopped container.
+- `docker container rm -f <containername>`: Deletes a running container.
 
 
 ## Network Commands
@@ -67,3 +69,16 @@ The set of commands used generally are:
 - `docker compose down`: Stops the architecture completely and cleans up. Removes the networks and other resources.
 - `docker compose down -v`: Stops the architecture completely and cleans up. Removes the networks, volumes and other resources. Docker always protects volumes by default. Here we explicitly want them removed.
 - `docker compose build`: Rebuilds images that have already been made by Compose.
+
+
+## Swarm Commands
+
+- `docker swarm init`: Enable the Swarm service (disabled by default).
+- `docker swarm init --advertise-addr <address>`: Enable the Swarm service but make the public IP address advertized to all the other nodes or members in the Swarm system. The system executing the command becomes a manager node. This spits out a command with a token. The command shown is a join command that is to be run on the worker nodes.
+- `docker node ls`: Lists out all the Swarm nodes. It shows the status, availibility, hostname and the manager status.
+- `docker node update --role manager <nodename>`: This upgrades the worker node given to be a manager node.
+- `docker service create <imagename>`: Creates a cluster of exactly one node that runs a container coming from the given image.
+- `docker service create --name <servicename> <imagename>`: Creates a cluster of exactly one node that runs a container coming from the given image. This also assigns the service a name rather than using the random name.
+- `docker service ps <servicename>`: Lists out all the tasks running within the services as containers.
+- `docker service update <servicename> --replicas <number>`: Changes the service to have the given number of replicas.
+- `docker service rm <servicename>`: removes the service entirely.
