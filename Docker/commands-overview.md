@@ -57,3 +57,13 @@ The set of commands used generally are:
 - `docker volume inspect <volumename>`: If we take that long ID and inspect it, we might be able to tell where in the host machine it is running as well as have some metadata about the volume.
 - `docker volume prune`: Cleans up unused volumes.
 - `docker volume create <volumename>`: Creaes volumes ahead of its use.
+
+
+## Compose Commands
+
+- `docker compose up`: Uses the `docker-compose.yaml` file in the current directory to set up all containers, volumes, etc and start the entire architecture described in the YAML file.
+- `docker compose up`: Same as above except we wouldn't get any logs to the screen since it would operate in detatched mode.
+- `docker compose stop`: Stops the architecture completely. Does not clean up.
+- `docker compose down`: Stops the architecture completely and cleans up. Removes the networks and other resources.
+- `docker compose down -v`: Stops the architecture completely and cleans up. Removes the networks, volumes and other resources. Docker always protects volumes by default. Here we explicitly want them removed.
+- `docker compose build`: Rebuilds images that have already been made by Compose.

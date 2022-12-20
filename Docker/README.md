@@ -70,5 +70,9 @@ This section of the repo consists of multiple important concepts that are releva
     - Docker Hub
     - Dockerfiles
     - Dockerfile Size Optimization Techniques
+- **Docker Compose**
+    - General Information
+- **Docker Swarm**
+    - General Information
 - <a href="commands-overview.md">Overview of Docker Commands</a>
     - Network Commands
