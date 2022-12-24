@@ -51,11 +51,20 @@ This project is geared towards the proper understanding of certain technologies 
         - [x] Dockerfiles
         - [x] Docker Image Size Decreasing Techniques
         - [ ] Multi-Stage Builds
+    - [ ] Docker Compose
+        - [x] Basic Concepts
+        - [ ] Docker Compose File
+        - [ ] Examples
+    - [ ] Docker Swarm
+        - [x] Basic Concepts
+        - [ ] Examples
     - [ ] Important Commands
         - [ ] Containers
         - [x] Images
-        - [ ] Volumes
-        - [ ] Networks
+        - [x] Volumes
+        - [x] Networks
+        - [x] Compose
+        - [ ] Swarm
         - [ ] Miscelleaneous
 - [ ] CI/CD
     - [x] Github Actions
@@ -76,8 +85,6 @@ This project is geared towards the proper understanding of certain technologies 
         - [x] Redis Design Principles
     - [ ] MongoDB
         - [ ] MongoDB Design Principles
-- [ ] Microservices
-    - [ ] gRPC
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
     - [ ] Google Associate Cloud Engineer Certification Preparation
@@ -87,7 +94,15 @@ This project is geared towards the proper understanding of certain technologies 
         - [ ] Essential Google Cloud Infrastructure - Foundation
 - [ ] System Design
     - [ ] Low-Level Design
+        - [ ] Common Design Principles
+            - [x] Decoupling
+            - [x] Single Responsibility Principle
+            - [ ] Open Close Principle
+        - [ ] Creational GoF Patterns
     - [ ] High-Level design
+        - [x] REST APIs
+        - [x] Microservices
+        - [ ] RPC
     - [ ] Design Examples
 
 
