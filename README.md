@@ -96,14 +96,17 @@ This project is geared towards the proper understanding of certain technologies 
     - [ ] Low-Level Design
         - [ ] Common Design Principles
             - [x] Decoupling
+        - [ ] SOLID Principles
             - [x] Single Responsibility Principle
             - [ ] Open Close Principle
         - [ ] Creational GoF Patterns
     - [ ] High-Level design
         - [x] REST APIs
-        - [x] Microservices
+        - [x] Microservices & Monoliths
         - [ ] RPC
     - [ ] Design Examples
+        - [x] Snakes and Ladder
+        - [ ] Tic-Tac-Toe
 
 
 ## Package Managers
