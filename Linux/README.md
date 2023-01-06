@@ -28,6 +28,17 @@ There are multiple ways to learn Linux. However, out of these, sum are not wholl
 
 The markdown files here detail every part of Linux covered here:
 
+- Operating System Theory
+    - Interrupts
+    - Context Switches
+    - Forks
+    - Shared Memory
+    - Free Memory
+    - Available Memory
+    - Virtual Memory
+    - Swap Space
+    - Kernel
+    - Daemon
 - Linux Terminal
     - Introduction
     - Specific Commands
@@ -37,6 +48,7 @@ The markdown files here detail every part of Linux covered here:
 - Linux Commands
     - Commands
     - Aliases
+- - Linux Performance Commands
 - Linux Environment Variables
 - Linux File System
     - File Extensions

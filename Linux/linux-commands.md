@@ -40,6 +40,9 @@ Here we list out some famous Linux commands that quite hndy in day-to-day operat
 - `updatedb`: Used to update the search database that `locate` accesses.
 - `sudo`: Used in conjunction to other commands to allow elevated system privileges.
 - `tar`: Used to archive files.
+- `vmstat`: Used to monitor performance as it gives information about processes, memory, paging, etc.
+- `free`: Shows memory details.
+- `dmesg`: Shows kernel log messages.
 
 
 ## General Guideines
