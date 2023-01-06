@@ -39,6 +39,10 @@ The markdown files here detail every part of Linux covered here:
     - Swap Space
     - Kernel
     - Daemon
+    - Redundant Array of Inexpensive/ Independent Disks
+    - Principle of Least Privilege
+    - Power On Self test
+    - BIOS
 - Linux Terminal
     - Introduction
     - Specific Commands
