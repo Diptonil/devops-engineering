@@ -14,3 +14,4 @@ This is the sequence that needs to be followed to study networking:
 1. **User Datagram Protocol**
 1. **Hyper Text Transfer Protocol**
 1. **Transport Layer Security**
+1. **Proxy**

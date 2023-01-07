@@ -31,9 +31,13 @@ This project is geared towards the proper understanding of certain technologies 
 - [ ] Networking
     - [x] OSI and TCP/IP Models
     - [ ] IP
-    - [ ] TCP and UDP
+    - [ ] Ports
+    - [x] TCP and UDP
+    - [x] HTTP
+    - [x] TLS
+    - [x] Proxy Servers
 - [ ] Security
-    - [ ] Denial of Service
+    - [x] Denial of Service
 - [ ] Linux
     - [ ] OS Concepts
     - [x] Manual
