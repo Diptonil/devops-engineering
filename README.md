@@ -28,10 +28,18 @@ This project is geared towards the proper understanding of certain technologies 
     - YAML, XML, JSON
     - Automation Tools
 - [ ] Go for DevOps
-- [x] Linux
+- [ ] Networking
+    - [x] OSI and TCP/IP Models
+    - [ ] IP
+    - [ ] TCP and UDP
+- [ ] Security
+    - [ ] Denial of Service
+- [ ] Linux
+    - [ ] OS Concepts
     - [x] Manual
     - [x] Terminal
     - [x] Commands
+    - [x] Performance Commands
     - [x] File System
     - [x] Software Ecosystem
     - [ ] Special Files
