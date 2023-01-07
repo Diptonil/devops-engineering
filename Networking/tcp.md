@@ -17,7 +17,7 @@ There are examples of a TCP server and a client written in Python in this direct
 
 - **Larger Packets**: We can see so many good things about TCP like connection maintainability, ordering of packets, congestion conrol, etc. But all of these add on to the packets, along with the data that is being transferred. That is a con. The packet sise bloats up with overhead. And sometimes, it might not be needed.
 - **More bandwidth**: To ship larger packets, more bandwidth is needed. So, 2G or 3G would perform insufficiently.
-- **Slower than UDP**: We are establishing a connection. That obviously adds a lot of wait to the transfer (for larger packets, acknowledgements, etc.).
+- **Slower than UDP**: We are establishing a connection. That obviously adds a lot of wait to the transfer (for larger packets, acknowledgements, etc.). 
 - **Stateful**: Statefulness means that when the connection between client and server were to falter and then remade to continue the work that is being done, if the process *cannot* continue right where it left off without interruptions. It *will* get interrupted. This is because the state of the connection is stored and carried around by both the parties. In other words, the connection is lost if it breaks. It cannot be *reconnected*, so to speak.
 - **Server Memory**: TCP is very much server-first in its approach. That means, every TCP connection being handled by the server causes some overhead to it. It uses up memory to create and maintain that TCP connection. So, there is a limit to the number of TCP connections a server can make.
 
