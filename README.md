@@ -27,7 +27,7 @@ This project is geared towards the proper understanding of certain technologies 
     - Anchors
     - YAML, XML, JSON
     - Automation Tools
-- [ ] Go for DevOps
+- [ ] Go
 - [ ] Networking
     - [x] OSI and TCP/IP Models
     - [ ] IP
@@ -36,6 +36,7 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] HTTP
     - [x] TLS
     - [x] Proxy Servers
+    - [ ] NAT
 - [ ] Security
     - [x] Denial of Service
 - [ ] Linux
@@ -95,8 +96,6 @@ This project is geared towards the proper understanding of certain technologies 
         - [ ] MySQL Design Principles
     - [ ] Redis
         - [x] Redis Design Principles
-    - [ ] MongoDB
-        - [ ] MongoDB Design Principles
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
     - [ ] Google Associate Cloud Engineer Certification Preparation

@@ -1,18 +1,32 @@
-# Golang for DevOps
+# Golang
 
-In this section, a basic introductory discussion to Go would be explored. The discussion would be restricted to as much knowledge as would be necessary for working in the field of DevOps.
+In this section, a basic introductory discussion to Go would be explored. The discussion, however, would not be restricted to as much knowledge as would be necessary for working in the field of DevOps. Developmental concepts are explored as well so as to gain insight on how complex applications like k8s are actually built.
 
 
 ## Why Go?
 
 - Every language used within the codebase of most Google applications (Java, Python, C/C++) had some limitations. Python was slow. Java had too much boilerplate and the environment had increasingly become complex as the newer versions had come out. C and C++ had compile-time issues.
-- Go was designed to provide a solution to it. It takes all their strengths and combines them together, keeping the weaknesses away.
+- Go was designed to provide a solution to it. It takes all their strengths and combines them together, keeping the weaknesses away. It is quite high-performance.
+- The best things about Go would be its speed, type-systems as well as (most importantly) support for concurrency. This is done using goroutines, which run within threads (it eliminates the need to multithread the application). Communication is also possible between the goroutines. That is done using channels.
+- There are many things that Go has that might not make sense if the teachings of some prior language is held on to. The best way to learn it would be to start with a blank slate.
 
 
-## Some Basic Norms
+## Cons
 
-- Comments start with the usual double forward-slashes.
-- Semicolons aren't needed. 
+- Has a steeper learning curve as compared to languages like Python.
+- Not suited for beginners.
+- Using Go can be time-consuming and frustrating. In some cases, programmers will need to use more lines of code than in a normal situation.
+- Things that can be easily done with languages like JavaScript or Python with such a huge ecosystem require too much of work here.
+- It’s got defective dependency management.
+
+
+## Contents
+
+1. **The Go Command**: Exploring the `go` command.
+1. **Hello World Project**: A Go project to print Hello World.
+1. **Variables**: Seeing how variables, data types & constants are defined in Go.
+1. **Pointers**: 
+1. **Collections of Data**: Seeing how arrays, slices and lists work in Go.
 
 
 ## Initializing a Project
@@ -27,31 +41,6 @@ In this section, a basic introductory discussion to Go would be explored. The di
 - All Go code must reside within packages. The package to which the `main.go` file belongs is the `main` package. This is why the first statement of every Go file is a package declaration.
 - Everything in Go is segregated into packages. Unlike Java's `java.lang`, nothing is pre-imported. We have to explicitly mention every imports. Import statements come after the package declaration.
 - For example, consoling in Go involves importing the `fmt` package and using the `Println()` or `Print()` within it. If variables are being used, it may be written as: `fmt.Print("Hello, there. How are you,", studentName)`. Note that spaces are automatically appended after a quote-end. This might be undesirable as well in some cases.
-
-
-## Entrypoints in Go
-
-Like Java's `main()`, Go also has its main method that serves as a single entrypoint to the execution of the project. There can only be one entrypoint to the application.
-
-
-## Execution
-
-Run `go run main.go`.
-
-
-## Variables & Constants
-
-- Go is statically typed. Use the `var` keyword to store values in variables. The convention is camelCase.
-- If we are declaring a variable, we must use it. If not, we get a Compile Error. Go does this to ensure code quality.
-- If we are immediately assigning a value to a variable right at the time of declaration, we do not need to specify the type. This makes it Type Inferred. Otherwise, we have to. We define type by specifying it after the declaration. Example: `var name string`.
-- We have syntactic sugar to certain assignment cases for Go. Instead of writing `var name string = "Hola!"` we can write `name := "Hola!"`. This simplifies the use of the language and is more Go-like. Types cannot be explicitly defined in this case. Constants can't be defined like this.
-- Using same conventions, if a value is to be used in an immutable fashion, we use constants. Use the `const` keyword instead of the `var`.
-
-
-## Data Types
-
-- Speaking about primitives, we have a whole range of types (like Java) from whose details we are abstracted away. These data types exist to ensure strict memory management. Good for programmers who like to be in charge. There are types like `uint8`, `uint16`, `int32`, etc. Such in-depth exploration may not be what we would need as DevOps engineers.
-- We can also assign a value to a variable at the time of declaring it **with** a type: `var value uint16 = 100`.
 
 
 ## Printing to Console
@@ -70,16 +59,6 @@ Run `go run main.go`.
 - We see that we are using pointers here, like C. The reason for use of a pointer here and not during printing is that the value is being dealt with in printing. Here, we are actually taking a variable and storing a value inside it at its memory location.
 
 
-## Pointers
-
-Basically, pointers in Go are very similar to those in C/C++.
-
-
 ## Calculations
 
 Compilation errors may happen in case of type mismatch. For example, `uint` and `int` are different and they would give compiler errors if not handled well.
-
-
-## Arrays
-
-We can create arrays here similar to C. We need to give the size as well, like: `var array = [10]` for a 10-element array.
