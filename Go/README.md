@@ -25,40 +25,14 @@ In this section, a basic introductory discussion to Go would be explored. The di
 1. **The Go Command**: Exploring the `go` command.
 1. **Hello World Project**: A Go project to print Hello World.
 1. **Variables**: Seeing how variables, data types & constants are defined in Go.
+1. **The Math Library**: A basic understanding of the semantics and the types of operations that can be supported.
+1. **Strings**: A basic understanding of how to operate on strings in Go.
 1. **Pointers**: 
 1. **Collections of Data**: Seeing how arrays, slices and lists work in Go.
-
-
-## Initializing a Project
-
-- The primary file that gets run in a Go project is the `main.go` file. Every project has one.
-- A Go file cannot work without being a part of a project. We need a *module* for a Go file to run. To create a module, from within the root of the project directory: `go mod init project-name`.
-- A `go.mod` file is created. It would have the Go version and the module name describing the project.
-
-
-## Packages
-
-- All Go code must reside within packages. The package to which the `main.go` file belongs is the `main` package. This is why the first statement of every Go file is a package declaration.
-- Everything in Go is segregated into packages. Unlike Java's `java.lang`, nothing is pre-imported. We have to explicitly mention every imports. Import statements come after the package declaration.
-- For example, consoling in Go involves importing the `fmt` package and using the `Println()` or `Print()` within it. If variables are being used, it may be written as: `fmt.Print("Hello, there. How are you,", studentName)`. Note that spaces are automatically appended after a quote-end. This might be undesirable as well in some cases.
-
-
-## Printing to Console
-
-- The `fmt` package provides `Print()`, `Printf()` and `Println()` functions.
-- They work the same way they work in Java.
-- `Printf()` is the print formatting function that works exactly similar to the C-language `printf()`.
-- To use `Printf()` in conjunction with newlines, escape sequences (\n) may be used.
-- Here the placeholder value is always considered as `%v` (this means the value) instead of `%s` for strings, `%d` for integers, etc. as was the case in C.
-- We also have another placeholder - `%T`. This is for types and not values (`int`, `string`, etc.).
+1. **Errors**: Exploring more about errors.
 
 
 ## Accepting Console Input
 
 - The `fmt` package has the `Scan()` function. It works similar to C-language's `scanf()`. Example: `fmt.Scan(&variable)`.
 - We see that we are using pointers here, like C. The reason for use of a pointer here and not during printing is that the value is being dealt with in printing. Here, we are actually taking a variable and storing a value inside it at its memory location.
-
-
-## Calculations
-
-Compilation errors may happen in case of type mismatch. For example, `uint` and `int` are different and they would give compiler errors if not handled well.
