@@ -1,6 +1,7 @@
-# Message Queues
+# Message Queues & Pub-Subs
 
-A message queue provides a lightweight buffer which temporarily stores messages, and endpoints that allow clients to connect to the queue in order to send and receive messages. The messages are usually small, and can be things like requests, replies, error messages, or just plain information. It can have the potential to greatly relieve a server from being overburdened and promote the principle of separation of concerns in system design.
+- A *message queue* provides a lightweight buffer which temporarily stores messages, and endpoints that allow clients to connect to the queue in order to send and receive messages. The messages are usually small, and can be things like requests, replies, error messages, or just plain information. It can have the potential to greatly relieve a server from being overburdened and promote the principle of separation of concerns in system design.
+- A *pub-sub system*
 
 
 ## Without Message Queues
@@ -16,7 +17,7 @@ One way to address this solution is horizontal scaling: get a reverse proxy, seg
 The reason why it is **somewhat ineffective** is because requests that lead to significant processing at the server. This means, no matter how many servers we spin up, each server again gets hooked up to a long-processing request that would take a lot of time, thereby blocking that server from other requests, yet again. This just irrationally increases costs without offering much optimizations.
 
 
-## Solution Using a Queue
+## Message Queues
 
 Having a queue offers the benefit that whatever request comes in, it immediately gets queued by the server. The whole operation takes O(1) time (enqueing). And spontaneously, the server responds to the client back with an identifier that acknowledges the request. It doesn't guarantee the execution of the request, but doesn't keep the user waiting. <br />
 It is better for the user to know that something is happening instead of not having their requests acknowledged.
@@ -26,3 +27,13 @@ It is better for the user to know that something is happening instead of not hav
 
 - When the processing time of most request to a service starts to become indeterministic, go for queues.
 - If the requests to the backend are very resource hungry (for whatever reason), it is a bad idea to have just the web server deal with everything out there. *A web server is a machine that serves web with responses*. Just taking the request and responding should be its only job. No processing, no calculations, etc.
+
+
+## Pub-Sub
+
+
+
+## Pub-Sub V Queues
+
+- Use Pub-Sub when we have a message that gets published once and consumes multiple times by different sources at different events and in varying time periods.
+- Use message queues when message is to be published once and strictly be consumed once, after which it is gone and cannot be retrieved by anything else.
