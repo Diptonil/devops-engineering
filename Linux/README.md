@@ -43,6 +43,13 @@ The markdown files here detail every part of Linux covered here:
     - Principle of Least Privilege
     - Power On Self test
     - BIOS
+    - Threads
+    - Synchronous Operations
+    - Asynchronous Operations
+    - Multithreaded Operations
+    - Multiprocessing Operations
+    - Mutex
+    - Semaphores
 - Linux Terminal
     - Introduction
     - Specific Commands

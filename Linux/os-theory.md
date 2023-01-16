@@ -58,3 +58,42 @@ Here, we discuss the important concepts behind an Operating System's functioning
 
 
 ## Basic Input/Output System (BIOS)
+
+
+## Threads
+
+
+
+
+## Synchronous Operations
+
+- There can be multiple types of operations happening in a machine. They can be related to a particular service or software running, or a lightweight or a heavyweight system operation going on.
+- Synchronosity means pre-ordainment and a predefined lifecycle that is strictly bound. It means that one task has to be done after another, and another. That particular route has to be followed compulsorily. A process might be waiting for the disk to read and send it data, but while the disk does its operation, all it can do is wait. Nothing else.
+- Hence, when a process is synchronous, it is tightly bound and cannot do any other work unless the process completes. Hence, CPU cycles are wasted with the process thread doing literally nothing.
+- There is only one thread in a process doing all the work.
+- This is the default behaviour of most old hardware. These days, a lot of optimizations can be done within a process to make optimum use of CPU.
+
+
+## Asynchronous Operations
+
+- The thread in synchronous systems that was properly scheduled to adhere to flow of process sends a request to the system stating that it would go on and do some other work while the process executes and is handed off to some resource (like a disk for reading, a printer to literally print, etc.). Once that operation by the device is done, a function call should happen that would bring the thread back. So, to bring the thread back, there are always *callback functions*.
+- They are always single-threaded.
+- One of the most elegant systems implementing this example is NojeJS - which is a single-threaded, non-blocking asynchronous framework.
+- The largest disadvantage of this method is that there are way too many callbacks that need to be designed for every task that the thread may branch off to do. Coding that would be ugly as well.
+- A fix was implemented by introducing async and await concepts. That made code that was asynchronous look synchronous with a bit of a syntactical sugar.
+
+
+## Multithreaded Operations
+
+- A thread is a lightweight process that lives within a space having access to all system resources, codes and files. It originates from a place known as the thread-pool from where, upon demand, threads can be spun up and used to do concurrent work.
+- This means, there are many threads in a process to do a task. Obviously, we have speed gains here.
+- We need to, however, take care of concurrency issues that may arise due to all threads having access to the same low-level system resources and files. We might run into situations where a certain element of a resource in the system is being attempted to be altered by two or more threads. That is risky.
+- Thread safety is the state of a system where it runs no risk of having problems with respect to thread concurrency or many threads trying to alter the same resource. While this is possible in theory, programming such a situation where thread saftely is guaranteed 100% of the time is not easy and is not always possible. This is why many engineers dislike multithreaded systems since its problems outweight the potential advantage it offers.
+- We have many mechanisms like mutex locks, etc. to ensure thread safety, which would be explored later.
+
+
+## Multiprocessing Operations
+
+- Instead of dealing with all the mess of making a thread asynchronous or having multiple threads in the first place, here we have everything as a well-defined, singular process.
+- Each huge process, to speed it up, executes as multiple processes. they communicate via *inter-process communication*.
+- The best thing about such a process is that a process can be made into a multi-process architecture and, to speed up to the extreme limits, can even be scaled across different systems.

@@ -2,12 +2,14 @@
 
 <div id="top"></div>
 <span>
+    <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
     <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
     <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
     <img src="https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" />
     <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
     <img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white" />
-    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+    <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" />
+    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
     <img src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white" />
     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
     <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
@@ -41,6 +43,18 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] Denial of Service
 - [ ] Linux
     - [ ] OS Concepts
+        - [ ] Interrupts
+        - [ ] Context Switches
+        - [x] Redundant Array of Inexpensive/ Independent Disks
+        - [x] Power-On-Self-Test
+        - [ ] Basic Input/Output System
+        - [ ] Threads
+        - [x] Synchronous Operations
+        - [x] Asynchronous Operations
+        - [x] Multithreaded Operations
+        - [x] Multiprocessing Operations
+        - [ ] Mutex
+        - [ ] Semaphores
     - [x] Manual
     - [x] Terminal
     - [x] Commands
@@ -48,6 +62,11 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] File System
     - [x] Software Ecosystem
     - [ ] Special Files
+- [ ] Message Queues & Pub-Sub
+    - [x] Message Queues
+    - [ ] Pub-Sub
+    - [ ] Apcahe Kafka
+    - [ ] RabbitMQ
 - [ ] Docker
     - [x] Containers
         - [x] Names
@@ -98,11 +117,10 @@ This project is geared towards the proper understanding of certain technologies 
         - [x] Redis Design Principles
 - [ ] Google Cloud Platform
     - [x] Google Cloud Digital Leader Certification Preparation
-    - [ ] Google Associate Cloud Engineer Certification Preparation
     - [ ] GCP Commonly Used Commands
     - [ ] Coursera Courses
-        - [ ] Google Cloud Fundamentals - Core Infrastructure
-        - [ ] Essential Google Cloud Infrastructure - Foundation
+        - [x] Google Cloud Fundamentals - Core Infrastructure
+        - [x] Essential Google Cloud Infrastructure - Foundation
 - [ ] System Design
     - [ ] Low-Level Design
         - [ ] Common Design Principles
