@@ -42,3 +42,14 @@
     - So, if we want our system to act like a message queue, we put all consumers in a comsumer group. 
     - If we want our consumer to act like a pub sub, we put all consumers in a unique group.
     - The whole architecture allows us to have parallel processing for free.
+
+
+## How is Kafka a Distributed System?
+
+- A broker is scalable. In distributed systems, a broker is declared as the leader and the other brokers part of that system is known as a follower. The follower automatically have their data as copied from the leader's data. That is the most basic level of distribution.
+- At a more granular level, we can make different brokers the masters of different partitions. This is a better approach of data durability.
+- There needs to be a system to, however, keep track of which broker is the leader of which partition. This is done by *Kafka Zookeeper*.
+
+
+## Zookeeper
+
