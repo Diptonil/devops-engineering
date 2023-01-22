@@ -39,6 +39,8 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] TLS
     - [x] Proxy Servers
     - [ ] NAT
+    - [ ] DNS
+    - [ ] Rate Limiting
 - [ ] Security
     - [x] Denial of Service
 - [ ] Linux

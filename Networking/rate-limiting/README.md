@@ -33,3 +33,9 @@ Analogous to how an irregular flow of water can be controlled by having a small 
     - At second 3, we have arriving packet: 3, current bucket load: 3 from previous + 2 from incoming = 5, sent packet size: 2 (leak rate is 2), 3 remaining packets & 1 discarded packet since only 2 out of 3 incoming packets were considered in the bucket.
     - At second 4, we have no arriving packets, current bucket load: 3 from previous, sent packet size: 2 (leak rate is 2), 1 remaining packet & no discarded packets.
     - At second 5, we have no arriving packets, current bucket load: 1 from previous, sent packet size: 1 (leak rate is 2), no remaining packets & no discarded packets.
+
+
+## Fixed Window Algorithm
+
+This algorithms works for distributed systems by assigning a user authorized to access a particular source an ID, against which they keep a count check for a given time duration. The count goes up by one per request. If the count reaches a certain threshold, further requests are not entertained. Refer to `FixedWindow.java`. <br />
+Assume an example case in which an user gets assigned an ID of 101. They get assigned a window of 1 hour: from 4 PM to 4:59 PM. They are allowed to make 30 requests within that hour at max. If they make more, their requests aren't entertained.
