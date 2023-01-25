@@ -19,3 +19,4 @@ This is the sequence that needs to be followed to study networking:
 1. **Network Address Translation**
 1. **Domain Name Service**
 1. **Rate Limiting**
+1. **Cyclic Redundancy Checks**
