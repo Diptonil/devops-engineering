@@ -1,4 +1,4 @@
-## Transmission Control Protocol
+# Transmission Control Protocol
 
 This is a transport layer protocol that was designed primarily for the *reliable* exchange of information over a network between two machines. <br />
 There are examples of a TCP server and a client written in Python in this directory.
