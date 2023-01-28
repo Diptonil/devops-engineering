@@ -47,9 +47,13 @@
 ## How is Kafka a Distributed System?
 
 - A broker is scalable. In distributed systems, a broker is declared as the leader and the other brokers part of that system is known as a follower. The follower automatically have their data as copied from the leader's data. That is the most basic level of distribution.
-- At a more granular level, we can make different brokers the masters of different partitions. This is a better approach of data durability.
-- There needs to be a system to, however, keep track of which broker is the leader of which partition. This is done by *Kafka Zookeeper*.
+- Leaders are allowed to do all read and write requests. Followers just assively replicate the role of a leader (only reads allowed). When a partition leader shuts down for any reason, one of it's in-sync partition followers becomes the new leader.
+- At a more granular level, we can make different brokers the masters of different partitions. This is a better approach for data durability.
+- The advantage of partitioning like this is that if for some reason a broker is to go down, the whole data isn't lost.
+- There needs to be a system to, however, keep track of which broker is the leader or follower of which partition. This is done by *Kafka Zookeeper*.
 
 
 ## Zookeeper
 
+- Assume an example in which there exists a producer, a consumer, 2 brokers with one topic named 'Users', 3 partitions. Broker 1 is the leader of partition 1 and 2. Broker 2 is the leader of partition 3.
+- The Producer would produce an item and schedule it as "write to topic User, partition 3". The brokers constantly keep on *gossiping* among themselves, under the system of Zookeeper, 

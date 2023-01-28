@@ -37,9 +37,10 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] TCP and UDP
     - [x] HTTP
     - [x] TLS
+    - [x] Bandwidth
     - [x] Proxy Servers
     - [ ] NAT
-    - [ ] DNS
+    - [x] DNS
     - [ ] Rate Limiting
     - [ ] Cyclic Redundancy Checks
 - [ ] Security
