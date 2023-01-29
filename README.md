@@ -38,6 +38,11 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] HTTP
     - [x] TLS
     - [x] Bandwidth
+    - [x] Network Devices
+        - Hub
+        - Switch
+        - Bridge
+        - Router
     - [x] Proxy Servers
     - [ ] NAT
     - [x] DNS
