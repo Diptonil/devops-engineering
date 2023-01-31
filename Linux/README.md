@@ -29,9 +29,6 @@ There are multiple ways to learn Linux. However, out of these, sum are not wholl
 The markdown files here detail every part of Linux covered here:
 
 - Operating System Theory
-    - Interrupts
-    - Context Switches
-    - Forks
     - Shared Memory
     - Free Memory
     - Available Memory
@@ -43,13 +40,18 @@ The markdown files here detail every part of Linux covered here:
     - Principle of Least Privilege
     - Power On Self test
     - BIOS
+    - Processes
     - Threads
     - Synchronous Operations
     - Asynchronous Operations
     - Multithreaded Operations
     - Multiprocessing Operations
+    - Inter-Process Communication
     - Mutex
     - Semaphores
+    - Interrupts
+    - Context Switches
+    - Forks
 - Linux Terminal
     - Introduction
     - Specific Commands

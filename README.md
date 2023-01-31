@@ -52,18 +52,20 @@ This project is geared towards the proper understanding of certain technologies 
     - [x] Denial of Service
 - [ ] Linux
     - [ ] OS Concepts
-        - [ ] Interrupts
-        - [ ] Context Switches
         - [x] Redundant Array of Inexpensive/ Independent Disks
         - [x] Power-On-Self-Test
         - [ ] Basic Input/Output System
+        - [ ] Processes
         - [ ] Threads
         - [x] Synchronous Operations
         - [x] Asynchronous Operations
         - [x] Multithreaded Operations
         - [x] Multiprocessing Operations
+        - [x] Inter-Process Communication
         - [ ] Mutex
         - [ ] Semaphores
+        - [ ] Interrupts
+        - [ ] Context Switches
     - [x] Manual
     - [x] Terminal
     - [x] Commands

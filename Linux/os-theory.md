@@ -3,11 +3,6 @@
 Here, we discuss the important concepts behind an Operating System's functioning.
 
 
-## Interrupts
-
-## Context Switches
-
-
 ## Redundant Array of Inexpensive/ Independent Disks (RAID)
 
 - We build our storage with redundancy (duplication of critical functions), so that one part of failure in the disk doesn't bring down the whole system. Reads and writes are spread out over more than a disk. Our data exists in more than one place.
@@ -60,6 +55,22 @@ Here, we discuss the important concepts behind an Operating System's functioning
 ## Basic Input/Output System (BIOS)
 
 
+## Processes
+
+- A program when in execution is a process. However, a program is more than the program source code. A process is an active entity that contains various additional components other than the program source code.
+- A process contains a process stack to store the temporary data such as function parameters, local variables, etc, a data section to store global variables, a heap memory allocated dynamically at runtime.
+- A **Process Control Block** represents a process in the operating system. A process control block contains various information related to a process such as a process state, program counter, CPU register details, memory management information, etc. It acts as a repository that contains all details that belong to the process.
+- A process may have *five* states: New, Ready, Running, Waiting & Terminated.
+    - When a new process is admitted, it becomes ready.
+    - When a process that is ready undergoes scheduler dispatch (gets a go signal by scheduler), it starts running.
+    - When a running process is finished execution, it is terminated.
+    - When a running process comes across an interrupt, it transitions back to ready state.
+    - When an event occurs, the running process undergoes an event wait until the event is done, after which it transitions back to ready state.
+- There are two types of processes:
+    - **Coordinating Processes**: These processes are employed to work in conjunction with other processes to achieve some task(s) by sharing of resources. It can affect or be affected by other system processes.
+    - **Independent Processes**: No scope for sharing of any data among other processes. It can neither affect nor be affected by others. It serves one task by itself.
+
+
 ## Threads
 
 
@@ -97,3 +108,33 @@ Here, we discuss the important concepts behind an Operating System's functioning
 - Instead of dealing with all the mess of making a thread asynchronous or having multiple threads in the first place, here we have everything as a well-defined, singular process.
 - Each huge process, to speed it up, executes as multiple processes. they communicate via *inter-process communication*.
 - The best thing about such a process is that a process can be made into a multi-process architecture and, to speed up to the extreme limits, can even be scaled across different systems.
+
+
+## Inter-Process Communication
+
+- In modern computing, we often have more than one processes work together to accomplish a single task (or we have multiple tasks being serviced by a single process). Hence arises the need for multiple processes to communicate with each other (if they are working together for a common objective). This is Inter-Process Communication (IPC).
+- As inferred by definition, it works for coordinating processes.
+- We need IPCs for:
+    - Faster computing.
+    - Modularity.
+    - Information Sharing.
+- There are two modes of IPC:
+    - **Shared Memory**:
+        - The idea is that there would exist a certain area in memory for sharing between interested processes.
+        - Generally, the OS doesn't allow sharing of memory between processes. This is to avoid race conditions. So, that restriction needs to be removed for it to work.
+        - The process that initiates the communication allots the shared memory space. Other processes who want to join in attach their address spaces for sharing.
+        - Since there is always a possibility that both processes might make writes to the shared location at the same time, hence the shared memory is not safe. We employ techniques of synchronization just to avoid this. We do that in ways of *semaphores* and *mutex*.
+    - **Message Passing**:
+        - The idea of shared memory may not always be possible (safety aside). In distributed systems, there may not be any place for that.
+        - Here, processes communicate with each other by means of message passing.
+        - If two processes are communicating (say A and B), the common channel is the kernel. For example, A writes to the disk a bit of info. It has to tell it to the kernel so that B can make a succesful read of that from the disk (by retrieving that info from kernel itself).
+        - There are several techniques of message passing. We have **direct communication** in which messages are directly sent at once rather than any intermediate queues or buffers. **Indirect communcation** uses a mailbox facility for storing the stream of messages. We can also add an aditional mode of **synchronization** in which ther messages that would pass through and won't are evaluated for decisions and are synced. We can also use **buffered communication** with an intermediary buffer.
+
+
+## Mutex
+
+
+
+## Interrupts
+
+## Context Switches
