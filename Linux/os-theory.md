@@ -133,6 +133,25 @@ Here, we discuss the important concepts behind an Operating System's functioning
 
 ## Mutex
 
+- In shared memory IPCs, we have two synchronization mechanisms - mutex and semaphores.
+- The *critical section* problem states that assuming a system has *n* processes running, each process has a segment of code in which they do a common variable update. This would obviously lead to unexpected race conditions. This critical section problem is what we seek to solve using mutex and semaphores. This is the only risk we have in shared memory IPCs.
+- There are certain characteristics of a critical section:
+    - Once a process executes its critical section, no other process is allowed to do so. This is to ensure atomic consistency of data. This is called *mutual exclusion*.
+    - There should be a *bounded wait* on for a process when it has requested for its critical section entry section and the number of times another process executes its critical section.
+    - The part of the code that grants permission for entry into a critical section is called an *entry section*. The code after the critical section is *exit section*.
+- A mutex is basically a lock. A process acquires a mutex lock when it executes its critical section and leaves it when it is done. A process trying to access a critical section gets blocked off until the lock is relinquished.
+- A mutex lock has a boolean variable (say *available*) that gauges if the critical section is available or not. It has two functionalities - **acquire** and **release** that each process can use to signal that universal *available* variable.
+- The greatest con to this problem is the **thread spinlock** or the **thread busy-waiting** problem. When a critical section is occupied, other threads are stuck in a loop constantly checking for the lock to be released. They are wasting their CPU cycles doing nothing. This makes threads totally pointless.
+- The greatest pro of this is that there is no need for context-switching (switching the context from one process to another with respect to the process execution) which is a resource-intensive operation.
+
+
+## Semaphore
+
+- Semaphores offer the utility that mutex offers but it does so in a more sophesticated way.
+- They don't have boolean variables, but integer variables. They keep a count of the process. That variable is mutually exclusive in access and hence atomic. There are two operations: **wait** and **signal**.
+- Binary semaphores can only acquire 0 and 1 as values. A binary semaphore has the same functionality as a mutex lock. Systems that do not support mutex locks can leverage binary semaphores to achieve the same functionality.
+- Counting semaphores range up to infinite numbers from 0. Every process is assigned a count of 1. If it is executing on the same resource, the count goes up. When it is done, the count falls.
+- An advantage that it has over mutex is that multiple threads of a process can access the same semaphore simultaneously.
 
 
 ## Interrupts
