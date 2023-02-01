@@ -51,7 +51,7 @@ The markdown files here detail every part of Linux covered here:
     - Semaphores
     - Interrupts
     - Context Switches
-    - Forks
+    - System Calls
 - Linux Terminal
     - Introduction
     - Specific Commands

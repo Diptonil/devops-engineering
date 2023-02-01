@@ -129,6 +129,7 @@ Here, we discuss the important concepts behind an Operating System's functioning
         - Here, processes communicate with each other by means of message passing.
         - If two processes are communicating (say A and B), the common channel is the kernel. For example, A writes to the disk a bit of info. It has to tell it to the kernel so that B can make a succesful read of that from the disk (by retrieving that info from kernel itself).
         - There are several techniques of message passing. We have **direct communication** in which messages are directly sent at once rather than any intermediate queues or buffers. **Indirect communcation** uses a mailbox facility for storing the stream of messages. We can also add an aditional mode of **synchronization** in which ther messages that would pass through and won't are evaluated for decisions and are synced. We can also use **buffered communication** with an intermediary buffer.
+- It is worth knowing that there are many other types of system calls. We can also have networking sockets as a mode in which two process may interact.
 
 
 ## Mutex
@@ -156,4 +157,4 @@ Here, we discuss the important concepts behind an Operating System's functioning
 
 ## Interrupts
 
-## Context Switches
+## Context Switch

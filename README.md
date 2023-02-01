@@ -55,17 +55,18 @@ This project is geared towards the proper understanding of certain technologies 
         - [x] Redundant Array of Inexpensive/ Independent Disks
         - [x] Power-On-Self-Test
         - [ ] Basic Input/Output System
-        - [ ] Processes
+        - [x] Processes
         - [ ] Threads
         - [x] Synchronous Operations
         - [x] Asynchronous Operations
         - [x] Multithreaded Operations
         - [x] Multiprocessing Operations
         - [x] Inter-Process Communication
-        - [ ] Mutex
-        - [ ] Semaphores
+        - [x] Mutex
+        - [x] Semaphores
         - [ ] Interrupts
         - [ ] Context Switches
+        - [ ] System Calls
     - [x] Manual
     - [x] Terminal
     - [x] Commands
