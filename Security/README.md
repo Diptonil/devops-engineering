@@ -5,4 +5,5 @@ This section completely deals with the security considerations that one must kee
 
 ## Contents
 
-- **Denial of Service Attacks (DOS)**
+1. **Types of Encryption**
+1. **Denial of Service Attacks (DOS)**
