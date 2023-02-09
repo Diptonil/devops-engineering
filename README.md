@@ -142,7 +142,16 @@ This project is geared towards the proper understanding of certain technologies 
             - [ ] Open Close Principle
         - [ ] Creational GoF Patterns
     - [ ] High-Level design
+        - [ ] Databases
+            - [x] Terminologies
+            - [x] Indexes
+            - [ ] ACID Theorem
+            - [ ] BASE Theorem
+            - [x] CAP Theorem
         - [x] REST APIs
+            - [x] Percentile Tail Latencies
+            - [ ] Hisory
+            - [x] Discussion
         - [x] Microservices & Monoliths
         - [ ] RPC
     - [ ] Design Examples
