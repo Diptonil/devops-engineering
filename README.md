@@ -47,7 +47,7 @@ This project is geared towards the proper understanding of certain technologies 
     - [ ] NAT
     - [x] DNS
     - [ ] Rate Limiting
-    - [ ] Cyclic Redundancy Checks
+    - [x] Web Servers
 - [ ] Security
     - [x] Denial of Service
 - [ ] Linux
