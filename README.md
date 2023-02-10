@@ -149,6 +149,8 @@ This project is geared towards the proper understanding of certain technologies 
             - [ ] BASE Theorem
             - [x] CAP Theorem
             - [x] Replication
+            - [ ] Partitioning
+            - [ ] Sharding
         - [x] REST APIs
             - [x] Percentile Tail Latencies
             - [ ] Hisory
