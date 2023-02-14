@@ -12,6 +12,7 @@
     - Has a default port at 9092
     - It is bi-directionally connected to the *producer*. Both can exchange information in two ways.
     - A TCP connection is established for both *producer* and *consumer*.
+    - A broker may have one or more topics residing within them.
 
 - **Topics**
     - A logical partitioning of the data that gets pushed into the broker.
@@ -55,5 +56,12 @@
 
 ## Zookeeper
 
+Zookeeper these days have become a Kafka prerequisite. They made this technology baked into the system.
 - Assume an example in which there exists a producer, a consumer, 2 brokers with one topic named 'Users', 3 partitions. Broker 1 is the leader of partition 1 and 2. Broker 2 is the leader of partition 3.
-- The Producer would produce an item and schedule it as "write to topic User, partition 3". The brokers constantly keep on *gossiping* among themselves, under the system of Zookeeper, 
+- The Producer would produce an item and schedule it as "write to topic User, partition 3". The brokers constantly keep on *gossiping* among themselves, under the system of Zookeeper. Now Kafka takes the leader partition and correctly writes to that broker. Any change made to a partition of one broker is copied to all other partitions.
+- Consuming is simpler because it is totally up to the Zookeeper to determine how data is read from (which broker is it read from).
+
+
+## Example
+
+We would create a single node cluster spin up Zookeeper here. We would create a topic, a producer and a consumer.
